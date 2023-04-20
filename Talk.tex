@@ -1,0 +1,97 @@
+% This document holds the main content of the talk. It is included in
+% the two global documumetns `Presentation.tex` and `Handout.tex` that
+% are used to create the actual presentation as well as a two on one
+% collated handout of the slides.
+%
+% All real content has to go to _this_ file!
+%
+% Last change: <Wed, 2022/02/09 16:12:37 arwagner l00lnxwagner.desy.de>
+%
+\mode<handout>{%
+    \usepackage{pgf}
+    \usepackage{pgfpages}
+    \pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+}
+\mode<presentation>{%
+    \usetheme{DESY}
+}
+\input{macros}
+\input{metadata}
+
+%---------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+% Add a licencse statement to all pages. Adopt this if any other
+% licences is used!
+
+%-% CC-BY-NC-SA 4
+%-% \setbeamertemplate{slide counter}[showall][]
+%-% \setbeamertemplate{footer element1}{%
+%-%     \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{\includegraphics[height=3ex]{img/CCBYNCSA}}
+%-% }
+
+% CC-BY 4, current suggetion for scientific content
+\setbeamertemplate{slide counter}[showall][]
+\setbeamertemplate{footer element1}{%
+%    \href{http://creativecommons.org/licenses/by/4.0/}{\includegraphics[height=3ex]{img/CCBY}}
+}
+
+%----------------------------------------------------------------------
+% Add manual table of contents
+% Two column example
+%-% \begin{frame}
+%-% \frametitle{Overview}
+%-%   \begin{columns}
+%-%       \begin{column}{0.4\textwidth}
+%-%           \hspace*{-0.97cm}\includegraphics[height=\textheight]{img/menzel}
+%-%       \end{column}
+%-%       \begin{column}{0.5\textwidth}
+%-%           \begin{itemize}[<+->]
+%-%               \item {Section}
+%-%               \item {Section}
+%-%           \end{itemize}
+%-%       \end{column}
+%-%   \end{columns}
+%-% \end{frame}
+
+%\begin{frame}
+%\frametitle{Overview}
+%  \begin{itemize}[<+->]
+%      \item {Section}
+%      \item {Section}
+%  \end{itemize}
+%\end{frame}
+
+%----------------------------------------------------------------------
+% Missuse parts as chapters according to DESY PR
+% \part[Part slide]{Part slide}
+% \makepart%
+
+%----------------------------------------------------------------------
+\section{\ldots}
+
+\begin{frame}
+\frametitle{Overview}
+\begin{itemize}
+  \item Section 1
+  \item Section 2 
+  \item Section 3
+  \item Summary
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Thank You}}
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Backup slides}}
+\end{frame}
+
+
+\end{document}
+% Enable spell checker for vim
+% setlocal spell spelllang=de
